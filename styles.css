@@ -151,3 +151,20 @@ filter:drop-shadow(4px 4px 4px #786b6b)
   transform: translate(0px, -10px);
   }
   }
+
+.wrapper{
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: row;
+}
+
+.text-wrapper{
+  margin: auto 5rem;
+  padding: auto 1rem;
+}
+
+.highlight{
+  color:purple;
+}

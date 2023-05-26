@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imgs/doge.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css">
     <script defer src="app.js"></script>
     <title>Biswash Dhungana</title>
 </head>
 <body>
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "121740430920792");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
   <div class="controls">
     <div class="control active-btn" data-id="home" >
         <i class="fas fa-home"></i>
@@ -32,17 +65,30 @@
 </div>   
       
 
-<div class="bubble">
-  <img src="./imgs/br4ke.png" alt="">
-  </div>
+
+
+<div class="wrapper">
+  <div class="bubble">
+    <img src="./imgs/br4ke.png" alt="">
+    </div>
+
+<div class="text-wrapper">
 
 <article>
-  <h1>
-    Hi, I'm Biswash Dhungana. A Software Engineer.</h1>
+<h1>
+  Hi, I'm 
+  <span class="highlight">
+    Biswash Dhungana. <br>
+  </span> A Software Engineer</h1>
 </article>
 
-
-<summary>In a quest to find the better me<summary>
+<summary>Balancing all aspects of life, in a quest to find the <br>
+  <span class="highlight">
+    better me.
+  </span> 
+  <summary>
+  </div>
+</div>    
 </body>
 </html>
 
