@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./imgs/doge.ico">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css">
     <script defer src="app.js"></script>
@@ -19,13 +20,14 @@
 <div id="fb-customer-chat" class="fb-customerchat">
 </div>
 
+
+<!-- Messenger Extension SDK start
 <script>
   var chatbox = document.getElementById('fb-customer-chat');
   chatbox.setAttribute("page_id", "121740430920792");
   chatbox.setAttribute("attribution", "biz_inbox");
 </script>
 
-<!-- Your SDK code -->
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -42,29 +44,34 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
+Messenger Extension SDK ends -->
+
+<div class="nav-wrapper">
 
   <div class="controls">
     <div class="control active-btn" data-id="home" >
-        <i class="fas fa-home"></i>
+      <i class="fas fa-home"></i>
     </div>
     <div class="control" data-id="about">
-        <i class="fas fa-user"></i>
+      <i class="fas fa-user"></i>
     </div>
     <div class="control" data-id="portfolio">
-        <i class="fas fa-briefcase"></i>
+      <i class="fas fa-briefcase"></i>
     </div>
     <div class="control" data-id="blogs">
-        <i class="far fa-newspaper"></i>
+      <i class="far fa-newspaper"></i>
     </div>
     <div class="control" data-id="contact">
-        <i class="fas fa-envelope-open"></i>
+      <i class="fas fa-envelope-open"></i>
     </div>
-</div>
-<div class="theme-btn">
+  </div>
+  <div class="theme-btn">
     <i class="fas fa-adjust"></i>
-</div>   
+  </div>   
+</div>
       
 
+<div id="home">
 
 
 <div class="wrapper">
@@ -86,9 +93,62 @@
   <span class="highlight">
     better me.
   </span> 
-  <summary>
+</summary>
+<span class="cv">
+  Download CV <i class="fas fa-download"></i>
+</span>
+
   </div>
-</div>    
+</div>  
+
+</div>
+
+<div class="about-me">
+<nav class="main-title">
+  <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+</nav>
+<h4>Information About <br> me</h4>
+<main class="about-container">
+  <section class="left-about">
+      <aside class="academics">
+        <span class="highlight">Academics</span>
+        <span>
+          Bachelor of <br>
+          Software Engineering
+        </span>
+        <span>
+          2019 - 2024
+        </span>
+        <span>
+          SOE,
+          Pokhara University
+        </span>
+        <span class="cv">
+          Download CV <i class="fas fa-download"></i>
+        </span>
+      </aside>
+  </section>
+
+  <section class="right-about">
+    <lottie-player src="./imgs/html5.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/css3.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/c.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/git.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/github.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/js.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/react.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/nodejs.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/python.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="./imgs/nextjs.json" background="transparent"  speed="1"  style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+  </section>
+
+</main>
+</div>
+
+.
+
+
+
 </body>
 </html>
 
