@@ -1,0 +1,28 @@
+:root{
+    --track-color: #191d2b;
+    --thumb-color: #8000ff;
+    --thumb-hover-color: #fff;
+}
+
+
+::-webkit-scrollbar{
+    width: 8px;
+    margin-right: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--track-color) ;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--thumb-color);
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--thumb-hover-color);
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
