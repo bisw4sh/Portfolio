@@ -740,13 +740,76 @@ form{
   }
 
   .right-about{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin: 1rem 1rem;
+    height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-    max-height: 20rem;
   }
-  .right-about > *{
-    height: 20px;
+
+  .portfolio{
+    height: unset;
+    margin: 10rem  auto auto auto;
+  }
+
+  .about-me{
+    height: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* #blogs{
+    margin: unset;
+    padding: unset;
+  } */
+
+  .blogs{
+    margin: 8px;
+  }
+
+  #contact{
+    margin: unset;
+  }
+  .contact-item{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .contact-item .icon{
+    margin: unset;
+    padding:unset;
+    left:0;
+    align-self: flex-start;
+  }
+}
+
+
+@media only screen and (max-width: 456px){
+  .right-about{
+    display:none;
+  }
+
+  .academics{
+    width: 100%;
+    padding: 2rem;
+  }
+  .cv .fas{
+    display: none;
+  }
+
+  #contact .main-title span{
+    display: none;
+  }
+  .controls{
+    width: 100%;
+    margin: unset;
+    padding: unset;
+    gap: minmax(.5rem, 1rem);
   }
 }
